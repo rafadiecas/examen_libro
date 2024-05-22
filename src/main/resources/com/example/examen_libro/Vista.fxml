@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_libro.Controlador">
@@ -56,6 +57,11 @@
                     <TextField fx:id="filtro_nombre" layoutX="212.0" layoutY="110.0" />
                   <Label layoutX="37.0" layoutY="93.0" text="ISBN" />
                   <Label layoutX="212.0" layoutY="93.0" text="Nombre" />
+                  <ImageView fitHeight="62.0" fitWidth="200.0" layoutX="200.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="https://upload.wikimedia.org/wikipedia/commons/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg" />
+                          </image>
+                  </ImageView>
                 </children>
             </AnchorPane>
          </children>
