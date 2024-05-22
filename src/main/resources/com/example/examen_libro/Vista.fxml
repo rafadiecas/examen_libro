@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_libro.Controlador">
+
+   <children>
+       <AnchorPane fx:id="grande" maxHeight="400.0" maxWidth="600.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="autor" layoutX="37.0" layoutY="67.0" />
+            <TextField fx:id="edicion" layoutX="37.0" layoutY="124.0" />
+            <TextField fx:id="publicacion" layoutX="38.0" layoutY="175.0" />
+            <TextField fx:id="titulo" layoutX="395.0" layoutY="67.0" />
+            <TextField fx:id="editorial" layoutX="395.0" layoutY="124.0" />
+            <TextField fx:id="isbn" layoutX="395.0" layoutY="226.0" />
+            <TextField fx:id="paginas" layoutX="395.0" layoutY="174.0" prefHeight="26.0" prefWidth="44.0" />
+            <TextField fx:id="stock" layoutX="448.0" layoutY="174.0" prefHeight="26.0" prefWidth="44.0" />
+            <TextField fx:id="pvp" layoutX="501.0" layoutY="174.0" prefHeight="26.0" prefWidth="44.0" />
+            <ComboBox fx:id="pasillo" layoutX="395.0" layoutY="280.0" prefWidth="150.0" />
+            <DatePicker fx:id="anyo_pub" layoutX="37.0" layoutY="226.0" prefHeight="26.0" prefWidth="150.0" />
+            <DatePicker fx:id="anyo_ed" layoutX="37.0" layoutY="280.0" prefHeight="26.0" prefWidth="150.0" />
+            <Button layoutX="274.0" layoutY="346.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+            <Label layoutX="38.0" layoutY="50.0" text="Autor" />
+            <Label layoutX="38.0" layoutY="106.0" text="Número de edicion" />
+            <Label layoutX="38.0" layoutY="158.0" text="Lugar de publicación" />
+            <Label layoutX="38.0" layoutY="209.0" text="Año de publicación" />
+            <Label layoutX="38.0" layoutY="263.0" text="Año de edición" />
+            <Label layoutX="395.0" layoutY="50.0" text="Título" />
+            <Label layoutX="395.0" layoutY="106.0" text="Editorial" />
+            <Label layoutX="395.0" layoutY="158.0" text="Nº pags" />
+            <Label layoutX="448.0" layoutY="158.0" text="Stock" />
+            <Label layoutX="501.0" layoutY="158.0" text="PVP" />
+            <Label layoutX="395.0" layoutY="209.0" text="ISBN" />
+            <Label layoutX="395.0" layoutY="263.0" text="Pasillo donde se encuentra" />
+            <AnchorPane fx:id="panel_tabla" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4f4f4;">
+                <children>
+                    <TableView fx:id="tabla" layoutX="25.0" layoutY="159.0" prefHeight="200.0" prefWidth="550.0">
+                        <columns>
+                            <TableColumn fx:id="autor_col" prefWidth="75.0" text="autor" />
+                            <TableColumn fx:id="edicion_col" prefWidth="75.0" text="año edicion" />
+                            <TableColumn fx:id="publicacion_col" prefWidth="50.0" text="lugar publicación" />
+                            <TableColumn fx:id="anyoPublicacion_col" prefWidth="50.0" text="año publicación" />
+                            <TableColumn fx:id="anyoEdicion_col" prefWidth="50.0" text="año edición" />
+                            <TableColumn fx:id="titulo_col" prefWidth="50.0" text="título" />
+                            <TableColumn fx:id="editorial_col" prefWidth="50.0" text="editorial" />
+                            <TableColumn fx:id="paginas_col" prefWidth="75.0" text="páginas" />
+                            <TableColumn fx:id="precio_col" prefWidth="75.0" text="pvp" />
+                            <TableColumn fx:id="stock_col" prefWidth="75.0" text="stock" />
+                            <TableColumn fx:id="isbn_col" prefWidth="75.0" text="isbn" />
+                            <TableColumn fx:id="pasillo_col" prefWidth="75.0" text="pasillo" />
+                        </columns>
+                    </TableView>
+                    <Button layoutX="459.0" layoutY="110.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+                    <TextField fx:id="filtro_isbn" layoutX="37.0" layoutY="110.0" />
+                    <TextField fx:id="filtro_nombre" layoutX="212.0" layoutY="110.0" />
+                  <Label layoutX="37.0" layoutY="93.0" text="ISBN" />
+                  <Label layoutX="212.0" layoutY="93.0" text="Nombre" />
+                </children>
+            </AnchorPane>
+         </children>
+       </AnchorPane>
+   </children>
+</VBox>
